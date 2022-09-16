@@ -9,7 +9,7 @@ function App() {
   const [input, setInput] = useState("Guardians of the galaxy");
 
   //   const movieKey = process.env.REACT_APP_KEY;
-  const url = `http://www.omdbapi.com?apikey=21eaf5cb`;
+  const url = `https://www.omdbapi.com?apikey=21eaf5cb`;
 
   const searchMovies = async (input) => {
     const response = await fetch(`${url}&s=${input}`);
@@ -19,8 +19,6 @@ function App() {
   console.log(movies);
   useEffect(() => {
     searchMovies(input);
-
-    // eslint-disable-next-line
   }, []);
 
   return (
