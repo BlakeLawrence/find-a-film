@@ -3,11 +3,13 @@ import React from "react";
 const MovieCard = ({ movies }) => {
   return (
     <div>
-      <h2>
-        {movies[0].Title}: {movies[0].Year}
-      </h2>
+      <div>
+        <h2 className="text-3xl">{movies.Title}</h2>
+      </div>
+      <img src={movies.Poster} alt={movies.Title} />
     </div>
   );
 };
 
 export default MovieCard;
+//{Title: 'Critters', Year: '1986', imdbID: 'tt0090887', Type: 'movie', Poster: for the image'}

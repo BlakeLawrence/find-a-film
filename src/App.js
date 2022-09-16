@@ -8,14 +8,16 @@ function App() {
   //   const movieKey = process.env.REACT_APP_KEY;
   const url = `http://www.omdbapi.com?apikey=21eaf5cb`;
 
-  const searchMovies = async function (title) {
+  const searchMovies = async (title) => {
     const response = await fetch(`${url}&s=${title}`);
     const data = await response.json();
-    setMovies(data.Search);
+    console.log(data.Search);
+    setMovies(data.Search[0]);
   };
-
+  console.log(movies);
   useEffect(() => {
-    searchMovies("The mask");
+    searchMovies("critters");
+    // eslint-disable-next-line
   }, []);
 
   return (
