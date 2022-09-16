@@ -6,19 +6,20 @@ This is an app that finds all movies by title.
 
 
 ### Resources
-I used Omdb's API to fetch data. Copy the url below top try it yourself:
+I used Omdb's API to fetch data. Url below for development purposes (its a vey simple api site to use and is free of charge):
 
 ```bash
 https://www.omdbapi.com/
 ```
 
 ### Challenges
-I had a few issues with my useEffect hook not working and not setting my state to the fetched object
+I had a few issues with my useEffect and my fetch function not setting my movie Object state to the fetched object.
 After a few combinations of fault finding, I managed to get it to play ball.
 
 ### Accomplishments
 I created this app to practice React fundamentals such as fetching and consuming data from an external API, conditional rendering, sending props and using state. 
 I also used Tailwind to further cement and practice my skills in styling and mobile responsiveness.
+I ahd a great day and alot of fun makign this app 🙂
 
 <h3 align="left">Languages:</h3>
 <p align="left"> 
