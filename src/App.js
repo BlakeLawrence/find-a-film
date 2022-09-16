@@ -8,19 +8,13 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [input, setInput] = useState("Guardians of the galaxy");
 
-  function handleChange(e) {
-    setInput(e.target.value);
-  }
-
   //   const movieKey = process.env.REACT_APP_KEY;
   const url = `http://www.omdbapi.com?apikey=21eaf5cb`;
 
   const searchMovies = async (input) => {
     const response = await fetch(`${url}&s=${input}`);
     const data = await response.json();
-
     setMovies(data.Search);
-    setInput("");
   };
   console.log(movies);
   useEffect(() => {
@@ -37,7 +31,7 @@ function App() {
       <div className="flex justify-center items-center bg-[#102542] pb-8 pt-8">
         <div className="border border-[#EDAE49]  flex w-2/3 sm:w-1/3 rounded-xl justify-center pr-2 shadow-md shadow-[#EDAE49]">
           <input
-            onChange={handleChange}
+            onChange={(e) => setInput(e.target.value)}
             className="h-[30px] rounded-xl w-full p-2 pl-4 mr-2 text-[#EDAE49] bg-[#102542] focus:outline-none "
             value={input}
             type="text"
