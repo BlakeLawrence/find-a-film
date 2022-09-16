@@ -4,7 +4,7 @@ const MovieCard = ({ movie }) => {
   return (
     <div className="flex-col justify-center items-center rounded-xl p-6 bg-gray-600 m-4">
       <img
-        className="w-full hover:scale-105"
+        className="rounded-xl w-full hover:scale-105"
         src={
           movie.Poster !== "N/A"
             ? movie.Poster
