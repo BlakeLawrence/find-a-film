@@ -18,6 +18,7 @@ function App() {
   const searchMovies = async (input) => {
     const response = await fetch(`${url}&s=${input}`);
     const data = await response.json();
+
     setMovies(data.Search);
     setInput("");
   };
@@ -33,8 +34,8 @@ function App() {
       <Navbar />
 
       {/* SEARCH BAR DIV */}
-      <div className="flex justify-center items-center bg-[#102542] pb-6 pt-6">
-        <div className="border border-[#EDAE49]  flex w-1/3 rounded-xl justify-center pr-2 shadow-md shadow-[#EDAE49]">
+      <div className="flex justify-center items-center bg-[#102542] pb-8 pt-8">
+        <div className="border border-[#EDAE49]  flex w-2/3 sm:w-1/3 rounded-xl justify-center pr-2 shadow-md shadow-[#EDAE49]">
           <input
             onChange={handleChange}
             className="h-[30px] rounded-xl w-full p-2 pl-4 mr-2 text-[#EDAE49] bg-[#102542] focus:outline-none "
@@ -51,13 +52,16 @@ function App() {
       </div>
 
       {/* Movie Cards Grid  */}
-      {/* conditional rendering to show mmovie cards if title available */}
+      {/* conditional rendering to show movie cards if title available */}
       <div className=" bg-[#102542] grid sm:grid-cols-6 w-full h-full">
         {movies?.length > 0 ? (
           movies.map((movie) => <MovieCard movie={movie} />)
         ) : (
-          <div>
-            <h2 className="text-black text-3xl">No movies found</h2>
+          <div className="pl-6 sm:pl-18 pt-64 pb-72 w-full h-[100px]">
+            <h2 className="text-[#EDAE49] text-2xl sm:text-3xl animate-pulse">
+              404 Error :<br />
+              No movies found for this title
+            </h2>
           </div>
         )}
       </div>
