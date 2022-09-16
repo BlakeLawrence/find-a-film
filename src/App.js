@@ -25,7 +25,7 @@ function App() {
   console.log(movies);
   useEffect(() => {
     searchMovies(input);
-    setInput("");
+
     // eslint-disable-next-line
   }, []);
 
