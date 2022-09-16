@@ -21,7 +21,7 @@ I created this app to practice React fundamentals such as fetching and consuming
 I also used Tailwind to further cement and practice my skills in styling and mobile responsiveness.
 I ahd a great day and alot of fun makign this app 🙂
 
-<h3 align="left">Languages:</h3>
+<h3 align="left">Languages Used:</h3>
 <p align="left"> 
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) 
