@@ -15,6 +15,7 @@ function App() {
     const response = await fetch(`${url}&s=${input}`);
     const data = await response.json();
     setMovies(data.Search);
+    setInput("");
   };
   console.log(movies);
   useEffect(() => {
