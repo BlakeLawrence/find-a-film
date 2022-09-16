@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       {/* conditional rendering to show mmovie cards if title available */}
-      <div className=" grid sm:grid-cols-4 gap-4">
+      <div className=" grid sm:grid-cols-4">
         {movies?.length > 0 ? (
           movies.map((movie) => <MovieCard movie={movie} />)
         ) : (
