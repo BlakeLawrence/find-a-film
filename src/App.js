@@ -6,7 +6,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 function App() {
   const [movies, setMovies] = useState([]);
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState("Guardians of the galaxy");
 
   function handleChange(e) {
     setInput(e.target.value);
@@ -24,6 +24,7 @@ function App() {
   console.log(movies);
   useEffect(() => {
     searchMovies(input);
+    setInput("");
     // eslint-disable-next-line
   }, []);
 
@@ -33,15 +34,19 @@ function App() {
 
       {/* SEARCH BAR DIV */}
       <div className="flex justify-center items-center bg-[#102542] pb-6 pt-6">
-        <div className="border flex w-1/3 rounded-xl justify-center pr-2">
+        <div className="border border-[#EDAE49]  flex w-1/3 rounded-xl justify-center pr-2 shadow-md shadow-[#EDAE49]">
           <input
             onChange={handleChange}
-            className="h-[30px] rounded-xl w-full p-2 pl-4 mr-2"
+            className="h-[30px] rounded-xl w-full p-2 pl-4 mr-2 text-[#EDAE49] bg-[#102542] focus:outline-none "
             value={input}
             type="text"
             placeholder="search films"
           />
-          <AiOutlineSearch size={30} onClick={() => searchMovies(input)} />
+          <AiOutlineSearch
+            className="text-[#EDAE49]"
+            size={30}
+            onClick={() => searchMovies(input)}
+          />
         </div>
       </div>
 
