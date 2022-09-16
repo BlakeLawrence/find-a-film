@@ -2,9 +2,9 @@ import React from "react";
 
 const MovieCard = ({ movie }) => {
   return (
-    <div className="flex-col justify-center items-center rounded-xl p-6 bg-gray-600 m-4">
+    <div className="flex-col justify-center items-center rounded-xl bg-gray-600 m-4 hover:shadow-lg hover:shadow-[#1982c4] ">
       <img
-        className="rounded-xl w-full hover:scale-105"
+        className="rounded-t-xl w-full hover:scale-105"
         src={
           movie.Poster !== "N/A"
             ? movie.Poster
@@ -12,10 +12,10 @@ const MovieCard = ({ movie }) => {
         }
         alt={movie.Title}
       />
-      <div className="mt-4 bg-gray-300 w-full">
-        <div className="bg-gray-300 w-full">
-          <h2 className="text-xl">{movie.Title}:</h2>
-          <span className="text-xl">{movie.Year}</span>
+      <div className="mt-4 ">
+        <div className="p-1">
+          <h2 className="text-md">{movie.Title}:</h2>
+          <span className="text-lg">{movie.Year}</span>
         </div>
       </div>
     </div>
