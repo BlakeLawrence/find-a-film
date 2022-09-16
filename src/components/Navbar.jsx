@@ -8,18 +8,15 @@ const Navbar = () => {
         <img
           src={logo}
           alt="logo"
-          width={60}
-          className="mr-6 mt-3 font-[#EDAE49] "
+          className=" w-[25px] sm:w-[60px] mr-3 sm:mr-6 sm:mt-3"
         />
-
-        <h1 className="font-rampart text-5xl sm:text-8xl text-[#EDAE49] drop-shadow-xl shadow-[#EDAE49]">
+        <h1 className="font-rampart text-[38px] sm:text-6xl md:text-8xl text-[#EDAE49]">
           Movie Mate
         </h1>
         <img
           src={logo}
           alt="logo"
-          width={60}
-          className=" ml-6 mt-4 font-[#EDAE49] "
+          className="w-[25px] sm:w-[60px] ml-3 sm:ml-6 sm:mt- "
         />
       </div>
     </nav>

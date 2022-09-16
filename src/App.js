@@ -46,7 +46,7 @@ function App() {
 
       {/* Movie Cards Grid  */}
       {/* conditional rendering to show movie cards if title available */}
-      <div className=" bg-[#102542] grid sm:grid-cols-6 w-full h-full">
+      <div className=" bg-[#102542] grid sm:grid-cols-4 lg:grid-cols-6 w-full h-full">
         {movies?.length > 0 ? (
           movies.map((movie) => <MovieCard movie={movie} />)
         ) : (
