@@ -2,9 +2,9 @@ import React from "react";
 
 const MovieCard = ({ movie }) => {
   return (
-    <div className="flex-col justify-center items-center rounded-xl bg-gray-600 m-4 hover:shadow-lg hover:shadow-[#1982c4] ">
+    <div className="flex-col justify-center items-center rounded-xl bg-gray-600 m-4 shadow-lg shadow-black hover:shadow-lg hover:shadow-[#1982c4]  hover:scale-105">
       <img
-        className="rounded-t-xl w-full hover:scale-105"
+        className="rounded-t-xl w-full"
         src={
           movie.Poster !== "N/A"
             ? movie.Poster
@@ -23,4 +23,3 @@ const MovieCard = ({ movie }) => {
 };
 
 export default MovieCard;
-//{Title: 'Critters', Year: '1986', imdbID: 'tt0090887', Type: 'movie', Poster: for the image'}

@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import MovieCard from "./components/MovieCard";
+import Navbar from "./components/Navbar";
+import { AiOutlineSearch } from "react-icons/ai";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -21,6 +23,20 @@ function App() {
 
   return (
     <>
+      <Navbar />
+
+      {/* SEARCH BAR DIV */}
+      <div className="flex justify-center items-center bg-[#102542]">
+        <input
+          className="h-[30px] rounded-xl w-1/3"
+          value="superman"
+          type="text"
+          placeholder="search films"
+        />
+        <AiOutlineSearch size={20} />
+      </div>
+
+      {/* Movie Cards Grid  */}
       {/* conditional rendering to show mmovie cards if title available */}
       <div className=" bg-[#102542] grid sm:grid-cols-6 w-full h-full">
         {movies?.length > 0 ? (
