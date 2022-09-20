@@ -19,7 +19,7 @@ After a few combinations of fault finding, I managed to get it to play ball.
 ### Accomplishments
 I created this app to practice React fundamentals such as fetching and consuming data from an external API, conditional rendering, sending props and using state. 
 I also used Tailwind to further cement and practice my skills in styling and mobile responsiveness.
-I ahd a great day and alot of fun makign this app 🙂
+I had a great day and alot of fun makign this app 🙂
 
 <h3 align="left">Languages Used:</h3>
 <p align="left"> 
