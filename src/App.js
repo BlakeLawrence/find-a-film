@@ -50,7 +50,9 @@ function App() {
       {/* conditional rendering to show movie cards if title available */}
       <div className=" bg-[#102542] grid sm:grid-cols-4 lg:grid-cols-6 w-full h-full">
         {movies?.length > 0 ? (
-          movies.map((movie) => <MovieCard movie={movie} />)
+          movies.map((movie) => (
+            <MovieCard key={Math.random() * 1000} movie={movie} />
+          ))
         ) : (
           <div className="pl-6 sm:pl-18 pt-64 pb-72 w-full h-[100px]">
             <h2 className="text-[#EDAE49] text-2xl sm:text-3xl animate-pulse">
