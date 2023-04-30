@@ -39,7 +39,7 @@ function App() {
             placeholder="search films"
           />
           <AiOutlineSearch
-            className="text-[#EDAE49]"
+            className="text-[#EDAE49] cursor-pointer"
             size={30}
             onClick={() => searchMovies(input)}
           />

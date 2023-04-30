@@ -13,7 +13,7 @@ const Navbar = () => {
           alt="logo"
           className=" sm:mt-6 w-[25px] sm:w-[60px] mr-4 sm:mr-8 sm:mb-6"
         />
-        <h1 className=" font-rampart text-[38px] sm:text-6xl md:text-7xl lg:text-8xl text-[#EDAE49]">
+        <h1 className="font-rampart text-[38px] sm:text-6xl md:text-7xl lg:text-8xl text-[#EDAE49]">
           Movie Mate
         </h1>
         <img
